@@ -1,0 +1,402 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    
+}
+.container .bodyleft{
+    width: 20%;
+    background-color:  black;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: flex-start;
+    position: fixed;
+    top:0;
+    height: 100vh;
+    left: 10%;
+}
+.container .bodyleft .homeicon{
+    display: flex;
+  
+    align-items: center;
+ 
+}
+.material-icons{
+    
+    margin-right: 10px;
+}
+.container .bodyleft .homeicon .homebg{
+    border-radius: 25px;
+    display: flex;
+    font-size: 15px;
+    font-weight: 600;
+    align-items: center;
+    background-color: black bgb(70, 20, 20);
+    padding: 5px;
+    padding-inline: 20px;
+    color: ghostwhite;
+    margin: 5px;
+}
+
+.tweet1{
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 700;
+    align-items: center;
+    background-color: black bgb(70, 20, 20);
+    padding: 10px;
+    padding-inline: 10px;
+    color: ghostwhite; 
+    margin: 5px;
+    background-color:#1d9bf0;
+    width: 200px;
+    
+}
+.tweet1:hover{
+    cursor: pointer;
+    
+}
+
+
+.container .bodyleft .homeicon .homebg:hover{
+    cursor: pointer;
+    background-color: rgb(37, 37, 37);
+    
+}
+
+.container .bodyleft .homeicon1 .homebg .homesvg{
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+.container .bodyleft .homeicon1 .homebg .homesvg:hover{
+    background-color: rgb(37, 37, 37);
+}
+.container .bodyleft .homeicon1 .homebg .homesvg img{
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+   
+}
+.profiledt{
+    display: flex;
+    margin-top: 40px;
+    
+    padding: 10px;
+    border-radius: 30px;
+}
+.profiledt .propic{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.profiledt .propic img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    
+}
+ h2{
+     font-size:12px ;
+     font-weight: 600;
+color: white;
+}
+.profiledt p{
+    font-weight: 200;
+}
+.proiconmore{
+    margin-left: 50px;
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+}
+.profiledt:hover{
+    background-color:rgb(37, 37, 37) ;
+    cursor: pointer;
+}
+
+.container .bodycenter{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+background-color: black;
+margin-left: auto;
+
+height: max-content;
+
+ 
+}
+.centerHome{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    position: fixed;
+  z-index: 999;
+  top: 0;
+   height: 40px;
+   width: 505px;
+   background-color: black;
+   border: .2px grey solid;
+}
+.centerHome .homeiconnn{
+    color: white;
+    font-size: 10px;
+    cursor: pointer;
+}
+.toptweets{
+    display: flex;
+    align-items: center;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    
+    padding-left: 5px;
+}
+.toptweets:hover{
+    background-color: rgb(37, 37, 37);
+}
+
+.newTweetbox1 {
+    display: flex;
+    padding: 10px;
+    height: 100px;
+    width: 100%;
+    border: 0.1px solid grey;
+    
+    margin-top: 40px;
+}
+.newTweetbox {
+    display: flex;
+    padding: 10px;
+    height: 100px;
+    width: 100%;
+   
+    border: grey 0.1px solid;
+}
+
+.newTweetbox1 .newprofilel{
+    width: 80px;
+    display: flex;
+    padding-top: 10px;
+    align-items: top;
+    justify-content: center;
+}
+.newTweetbox1 .newprofilel .newpropic{
+    width: 40px;
+    height: 40px;
+}
+.newTweetbox1 .newprofilel .newpropic img{
+    width: 100%;
+    height: auto;
+border-radius: 50%;
+}
+.newTweetbox .newprofilel{
+    width: 80px;
+    display: flex;
+    padding-top: 10px;
+    align-items: top;
+    justify-content: center;
+}
+.newTweetbox .newprofilel .newpropic{
+    width: 40px;
+    height: 40px;
+}
+.newTweetbox .newprofilel .newpropic img{
+    width: 100%;
+    height: auto;
+border-radius: 50%;
+}
+.newcontainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.newcontainer .watshappen{
+    margin: 10px;
+    font-weight: 400;
+    font-size: 15px;
+    color: grey;
+    display: flex;
+    align-items: center;
+}
+h3{
+    color: white;
+    font-size: 15px;
+    
+}
+h4{
+    color: white;
+    font-size: 12px;
+    font-weight: 300;
+    margin-left: 10px;
+}
+.newcontainer .newpost1{
+    display: flex;
+   color:#1d9bf0;
+   margin: 3px;
+   display: flex;
+   justify-content: space-between;
+   
+}
+.newcontainer .newpost1 .newicons{
+    cursor: pointer;
+}
+.newcontainer .newpost1 .newtweets{
+cursor: pointer;
+background-color:#1d9bf0;
+display: block;
+padding-inline: 20px;
+border-radius: 20px;
+align-items: center;
+padding-top: 2px;
+}
+.newcontainer .newpost1 .newtweets p{
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+.newicons1{
+    width: 100%;
+    color: gray;
+    display: flex;
+    justify-content: space-between;
+    font-size:2px;
+}
+.newicons1 .material-icons{
+    margin-top: 5px;
+}
+.newicons1 span{
+cursor: pointer;   
+    font-size:15px;
+    
+}
+.container .bodyright{
+    width: 20%;
+    margin-right: 10%;
+background-color: black;
+display: flex;
+flex-direction: column;
+}
+.bodyright .searchcont .seachbg{
+    display: flex;
+    height: 35px;
+    width: 230px;
+    color: #6c7175;
+    padding-inline: 10px;
+    justify-content: flex-start;
+    background-color: #202327;
+    border-radius: 20px;
+    align-items: center;
+    margin: 3px;
+    margin-inline: 10px;
+}
+.bodyright .searchcont .seachbg .material-icons{
+margin-top: 4px;
+}
+.bodyright .searchcont{
+    position: fixed;
+    top: 0;
+    right: 9%;
+    background-color: black;
+}
+.bodyright .watshappenright{
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    margin-top:35px ;
+    margin-left: 30px;
+    margin-top:50px ;
+    border-radius: 10px;
+    background-color: #202327;
+}
+.bodyright .watshappenright .Happentext{
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px;
+}
+.watshappenright .rightfeed{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+.watshappenright .rightfeed:hover{
+    cursor: pointer;
+    background-color: #353536;
+}
+.watshappenright .rightfeed .text11{
+width: 150px;
+color: white;
+
+}
+.text22 p{
+color: rgb(177, 176, 176);
+padding-left: 10px;
+font-size: 12px;
+margin-bottom: 2px;
+
+}
+h4{
+    font-size: 13px;
+    font-weight: 600;
+}
+.bodyright .watshappenright .rightfeed .textpic1{
+    width: 100px;
+    height: 100px;
+    
+}
+.bodyright .watshappenright .rightfeed .textpic1 img{
+width: 100%;
+height: 70%;
+border-radius: 20px;
+}
+.follow{
+    background-color: #353536;
+    height: 30px;
+    width: 80px;display: flex;
+    align-items: center;
+    padding-inline: 10px;
+    border-radius: 20px;
+    align-items: center;
+}
+.follow:hover{
+    cursor: pointer;
+    background-color:gray ;
+}
+.bodyright .watshappenright .rightfeed1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+.bodyright .watshappenright .rightfeed1 .textpic3{
+    width: 60px;
+    height: 70px;
+    
+}
+.bodyright .watshappenright .rightfeed1 .textpic3 img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    }
